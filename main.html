@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Personal Portolio Webpage</title>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0"/>
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+
+    <body>
+        <nav id="navbar">
+            <a class="nav_link" href="#about_me">About Me</a>
+            <a class="nav_link" href="#projects">Projects</a>
+            <a class="nav_link" href="#links">Links</a>
+        </nav>
+
+        <section id="about_me">
+            <div>
+                <img id="me" src="me.jpg" alt="Me In front of a cool tree" width="375" height="275"/>
+                <h1 class="introduction">Hi my name is Rishie Kugathasan!</h1>
+                <p id="long_description"> I'm a recent graduate from Carleton University with a Bachelor's in Computer Science! I've completed projects and assignments from many different areas of programming such 
+                    as <span class="highlight">object-oriented, functional and web-related</span>. My top 5 languages would have to be <span class="highlight">Python, C, C++, Java</span> and of course I can't leave out <span class="highlight">JavaScript</span>. Dealing with web-related technologies is 
+                    definitely my specialty as most of the current projects that I'm working on incorporate a server, which usually uses <span class="highlight">NPM, Node.js, Express, API Libraries</span>, and a bit of <span class="highlight">MongoDB</span> at times. Even 
+                    though, I'm more experienced in <span class="highlight">back-end</span>, recently I've been having a lot of fun with <span class="highlight">CSS</span> and have found myself playing around with it more, while making several different website designs. 
+                    <span class="highlight">Low-level programming</span> has been the most interesting to me from my experience, as you require a lot more knowledge as to how certain primitive functions in later languages work, for example dealing 
+                    with pointers and double pointers can be classified under that. <br><br>
+
+                    I've also had my fair share of experience with <span class="highlight">troubleshooting, documenting, testing and debugging</span> (trust me on the debugging part) with various languages under different environments too, even 
+                    <span class="highlight">Linux/Ubuntu</span>. My knowledge of databases is at a less advanced level, since I'm only used to using two databases, <span class="highlight">SQL and MongoDB</span>. However, I am trying to incorporate more of these technologies 
+                    into my projects and potentially <span class="highlight">cloud services</span> as well, since I've been messing around with <span class="highlight">Microsoft Azure</span> after claiming an account with them. <br><br>
+                    
+                    Overall, I've got a very good generalized understanding of many different aspects of Computer Science and please feel free to check out some of the projects I'm working on or completed below. Also, 
+                    I'm a very big anime fan so if you see any related references or images, then this can be the warning for that! If you'd like to contact me, my socials are linked at the footer of the page. Thank you 
+                    for your time!</p>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h1 id="project_title">⚡Current Projects⚡</h1>
+            <div class="project1">
+                <h3 style="text-decoration: underline;">Movie Tracking Web Interface 🎞️</h3>
+                <p>This project is my most notable one and the most massive as well. It is a full-stack web application that allows users to create their own accounts, interact with other users by 
+                    following/unfollowing them and track movies that they've seen. This site has a collection of movies and each movie has statistics such as movie title, release year, actors, etc. It is the 
+                    only project that can manage multiple users and handles the authentication of logging in and signup through sessions/secrets. Many other concepts are involved such as middleware, route 
+                    handling and body parsers. The primary languages that are used are HTML, CSS, JavaScript and PUG (front-end framework similar to EJS). The only 2 major issue is that the movie data is 
+                    hard-coded into the server and a database would need to be implemeneted (Looking towards MongoDB for that). The second issue is that the design of the website is very very basic and has to be 
+                    worked on after a database is connected. 
+                </p>
+                <a class="github_link" href="https://github.com/rishiekugathasan/MovieTime">Github link for MovieTime Web Interface Project</a><br>
+
+                <button class="button" id="button1" type="button" onclick="viewImages()">View Images</button><br>
+
+                <img class="movie_time_imgs" id="movie_time1" alt="Movie_Time_1" src="MovieTime1.png" style="display: none;">
+                <img class="movie_time_imgs" id="movie_time2" alt="Movie_Time_2" src="MovieTime2.png" style="display: none;">
+                <img class="movie_time_imgs" id="movie_time3" alt="Movie_Time_3" src="MovieTime3.png" style="display: none;">
+                <img class="movie_time_imgs" id="movie_time4" alt="Movie_Time_4" src="MovieTime4.png" style="display: none;">
+                <img class="movie_time_imgs" id="movie_time5" alt="Movie_Time_5" src="MovieTime5.png" style="display: none;">
+            </div>
+
+            <div class="project2">
+                <h3 style="text-decoration: underline;">Anilist CSS Designs ⛩️</h3>
+                <p>For this project I'll be going into depth in a little more background. I'm a huge fan of Anime and have been using this site named Anilist to track my progress. After a year or two
+                    of using this site, I realized I was able to customize my own page with CSS by using an external plugin/extension named Automail. The script for automail needed to be downloaded, along 
+                    with the browser extension named TaperMonkey. So I switched from tinkering with after effects and photoshop for my biography to working on CSS designs. I created several different designs,
+                    which can be seen here and several of them also use more advanced css concepts such as animations, transitions and media tags. Link to the script is here -> 
+                    <a href="https://greasyfork.org/en/scripts/370473-automail">Automail</a> and link to the tapermonkey extension is here -> <a href="https://www.tampermonkey.net/">TaperMonkey</a>. The 
+                    designs haven't been added to github yet, but will be done soon.</p>
+
+                <button class="button" id="button2" type="button" onclick="viewSecondImages()">View Images</button><br>
+
+                <img class="anilist_design_imgs" id="anilist_design1"alt="Anilist_Design_1" src="DesignImage1.png" style="display: none;">
+                <img class="anilist_design_imgs" id="anilist_design2" alt="Anilist_Design_2" src="DesignImage2.png" style="display: none;">
+                <img class="anilist_design_imgs" id="anilist_design3" alt="Anilist_Design_3" src="DesignImage3.png" style="display: none;">
+                <video controls autoplay id="anilist_design4" style="display: none;" class="anilist_design_imgs">
+                    <source src="DesignVideo4.mov" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="project3">
+                <h3 style="text-decoration: underline;">MongoDB Voting Submission 🗳️</h3>
+                <p>This project is to test out a voting submission for the best anime of the current year. The main focus point was to incorporate a database to keep the data of the optional anime 
+                    that could be selected. MongoDB was chosen for this and I also used MongoDBCompass to view the data in an easier fashion. I wanted to ensure that no user could possibly be able to 
+                    re-submit or spam the votes for any selection as this would clearly skew the results. Once the submission is made, the submit button will no longer function for the user and if they
+                    continue to persist by either clicking the back arrow or refreshing the page, they will be redirected to a page with a message indicating that they won't be able to submit again. A 
+                    negative captcha was also implemented as an invisible user input to users, but only a bot would be able to see it and fill it out. This was made to help reduce spam from bots. 
+                </p>
+                <a class="github_link" href="https://github.com/rishiekugathasan/AnimeQuiz2023">Github link for MongoDB Voting Submission Project</a><br>
+
+                <button class="button" id="button3" type="button" onclick="viewThirdImages()">View Images</button><br>
+
+                <img class="mongodb_imgs" id="mongo_db1" alt="Mongo_DB_1" src="MongoDBVote1.png" style="display: none;">
+                <img class="mongodb_imgs" id="mongo_db2" alt="Mongo_DB_2" src="MongoDBVote2.png" style="display: none;">
+                <img class="mongodb_imgs" id="mongo_db3" alt="Mongo_DB_3" src="MongoDBVote3.png" style="display: none;">
+            </div>
+
+            <div class="project4">
+                <h3 style="text-decoration: underline;">Excel Database 🗄️</h3>
+                <p>Maintaining an Excel Sheet database from User Input. The excel file initially has a column with various different values, and in my case I was using the database to 
+                    track the jobs I was applying to. So the values included variables such as company name, city, job title, etc. A fairly simple project and the code will be linked from my github. The 
+                    image below showcases an example of one of the data entries after the column width sizes were adjusted.</p>
+                <a class="github_link" href="https://github.com/rishiekugathasan/ExcelFile">Github link for Excel Database Project</a><br>
+
+                <button class="button" id="button4" type="button" onclick="viewFourthImages()">View Images</button><br>
+
+                <img class="excel_imgs" id="excel_ex" alt="Excel_Ex_1" src="ExcelExample.png" style="display: none;">
+            </div>
+
+            <script>
+                function viewImages () {
+                    let image1 = document.getElementById("movie_time1"); 
+                    let images = document.getElementsByClassName("movie_time_imgs");
+                    let b1 = document.getElementById("button1"); 
+
+                    if (image1.style.display == "block") {
+                        for (let i = 0; i < images.length; i++) {
+                            images[i].style.display = "none"
+                        }
+                        
+                        b1.innerHTML = "View Images"
+                    }else {
+                        for (let i = 0; i < images.length; i++) {
+                            images[i].style.display = "block"
+                        }
+                        b1.innerHTML = "View Less";
+                    }
+                }
+                function viewSecondImages() {
+                    let image2 = document.getElementById("anilist_design1");
+                    let images_2 = document.getElementsByClassName("anilist_design_imgs");
+                    let b2 = document.getElementById("button2");
+
+                    if (image2.style.display == "block") {
+                        for (let i = 0; i < images_2.length; i++) {
+                            images_2[i].style.display = "none"
+                        }
+                        
+                        b2.innerHTML = "View Images"
+                    }else {
+                        for (let i = 0; i < images_2.length; i++) {
+                            images_2[i].style.display = "block"
+                        }
+                        b2.innerHTML = "View Less";
+                    }
+                }
+
+                function viewThirdImages() {
+                    let image3 = document.getElementById("mongo_db1");
+                    let images_3 = document.getElementsByClassName("mongodb_imgs");
+                    let b3 = document.getElementById("button3");
+
+                    if (image3.style.display == "block") {
+                        for (let i = 0; i < images_3.length; i++) {
+                            images_3[i].style.display = "none"
+                        }
+                        
+                        b3.innerHTML = "View Images"
+                    }else {
+                        for (let i = 0; i < images_3.length; i++) {
+                            images_3[i].style.display = "block"
+                        }
+                        b3.innerHTML = "View Less";
+                    }
+                }
+
+                function viewFourthImages() {
+                    let image4 = document.getElementById("excel_ex");
+                    let b4 = document.getElementById("button4");
+
+                    if (image4.style.display == "block") {
+                        image4.style.display = "none";
+                        b4.innerHTML = "View Images"
+                    }else {
+                        image4.style.display = "block";
+                        b4.innerHTML = "View Less";
+                    }
+                }
+
+            </script>
+
+        </section>
+        <section id="links">
+            <div class="social_media_links">
+                <a href="https://www.linkedin.com/in/rishie-kugathasan-50a25319b/"><img id="linkedin_logo"alt="LinkedInLogo" src="LinkedInLogo.png"></a>
+                <a href="https://github.com/rishiekugathasan"><img id="github_logo"alt="GitHubLogo" src="GitHubLogo.png"></a>
+            </div>
+        </section>
+    </body>
+</html> 

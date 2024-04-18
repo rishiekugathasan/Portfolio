@@ -1,0 +1,232 @@
+html {
+    /*If I want horizontal scrollbar, uncomment these two lines ->
+    height: 100vw;
+    width: 100vw;*/
+    background-color: rgb(35, 44, 71);
+    color: whitesmoke;
+}
+
+body {
+    /*To ensure other divs can take the full width of the page.*/
+    margin: 0;
+    padding: 0;
+    
+}
+
+#navbar {
+    padding: 2.5vw;
+    position: fixed;
+    display: inline-block;
+    width: 100vw;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    text-align: center;
+
+    background-image: linear-gradient(45deg, rgb(27, 42, 87),rgb(0, 8, 32));
+}
+
+#navbar:hover {
+    background-color: rgb(6, 14, 39);
+}
+
+#navbar a {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#about_me {
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+.introduction {
+    font-weight: bolder;
+    font-size: 3rem;
+    left: 10vw;
+}
+
+#me {
+    margin-left: 5vw;
+    margin-right: 2vw;
+    margin-bottom: 1vw;
+    float: left;
+}
+
+#project_title {
+    text-align: center;
+}
+
+#anilist_design1, #anilist_design2, #anilist_design3, #excel_ex, #movie_time1, #movie_time2, #movie_time3, #movie_time4, #movie_time5, #mongo_db1, #mongo_db2, #mongo_db3 {
+    height: auto;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#anilist_design4 {
+    height: 20vw;
+    width: 50vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+}
+
+#linkedin_logo {
+    height: 4vw;
+    width: 4vw;
+}
+
+#github_logo {
+    height: 4vw;
+    width: 8vw;
+}
+
+.social_media_links {
+    text-align: center;
+    margin-top: 25px;
+    padding: 25px;
+}
+
+#links {
+    background-color: rgb(0, 13, 48);
+
+    width: 100%;
+}
+
+.project1, .project2, .project3, .project4 {
+    background-color: rgb(26, 35, 53);
+    border: solid 5px rgb(192, 145, 15);
+    border-radius: 5px;
+    margin-bottom: 50px;
+    padding: 25px;
+
+    transition: transform .2s;
+    max-width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#projects {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.project1:hover, .project2:hover, .project3:hover, .project4:hover {
+    -ms-transform: scale(1.0125); /* IE 9 */
+    -webkit-transform: scale(1.0125); /* Safari 3-8 */
+    transform: scale(1.0125); 
+}
+
+#button1, #button2, #button3, #button4 {
+    margin-top: 25px;
+
+    color: whitesmoke;
+    background-image: linear-gradient(45deg, rgb(104, 109, 190),rgb(15, 19, 80));
+    border: 2px solid rgb(204, 196, 196);
+    /*buttons still must be inline-block*/
+    display: inline-block;
+    height: 25px;
+    width: 100px;
+}
+
+#button1:hover, #button2:hover, #button3:hover, #button4:hover {
+    cursor: pointer;
+}
+
+#long_description {
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+.highlight {
+    font-weight: bold;
+    font-size: medium;
+    /*font-style: italic;*/
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    color: rgb(149, 41, 250);
+}
+
+.nav_link {
+    color: rgb(149, 41, 250);
+    
+    font-weight: bold;
+    font-size: x-large;
+}
+
+.github_link {
+    color: rgb(149, 41, 250);
+}
+
+@media only screen and (((min-width: 280px) and (max-width: 540px)) and ((min-height: 653px) and (max-height: 932px))) {
+    .introduction {
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+
+        display: inline-block;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .nav_link {
+        color: rgb(149, 41, 250);
+        font-weight: bold;
+        font-size: x-large;
+        text-decoration: underline;
+
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        
+    }
+    #me {
+        display: block;
+        margin-left: 0.5vw;
+        margin-right: 0.5vw;
+        margin-top: 15vw;
+        margin-bottom: 5vw;
+
+        width: 75 !important;
+        height: auto !important;
+
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+
+    }
+}
+
+/*
+#welcome-section {
+    height: 100vh;
+    width: 100vh;
+    margin-top: 100px;
+  }
+  
+  #navbar {
+    position: fixed;
+    top: 25px;
+    display: inline-block;
+    width: 100%;
+    left: 50%;
+  }
+  
+  @media screen and (max-width: 420px) {
+    #welcome-section {
+      margin-top: 25px;
+      height: 100vh;
+      width: 100vh;
+    }
+    #navbar {
+      position: fixed;
+      top: 5px;
+      display: inline-block;
+      width: 100%;
+      left: 50%;
+    }
+  }
+  */
