@@ -57,7 +57,8 @@ body {
     text-align: center;
 }
 
-#anilist_design1, #anilist_design2, #anilist_design3, #excel_ex, #movie_time1, #movie_time2, #movie_time3, #movie_time4, #movie_time5, #mongo_db1, #mongo_db2, #mongo_db3 {
+/*Add #mongo_db2 and #mongo_db3 here if we want more images*/
+#anilist_design1, #anilist_design2, #anilist_design3, #excel_ex, #movie_time1, #movie_time2, #movie_time3, #movie_time4, #movie_time5, #mongo_db1 {
     height: auto;
     width: 700px;
     display: block;
